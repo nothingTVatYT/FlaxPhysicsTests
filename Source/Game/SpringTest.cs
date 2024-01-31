@@ -1,4 +1,5 @@
 ﻿using FlaxEngine;
+using Utils = FlaxEngine.Utils;
 
 namespace Game;
 
@@ -21,7 +22,7 @@ public class SpringTest : Script
         _joint = Actor.As<DistanceJoint>();
         _previousBreakForce = _joint.BreakForce;
     }
-    
+
     /// <inheritdoc/>
     public override void OnFixedUpdate()
     {
