@@ -442,10 +442,42 @@
 			"OverrideMass": true
 		},
 		{
+			"ID": "08dc229fa3cd5200f238e854043f3a11",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "08dc2297f7ea0ffe3539c75fa246e2fa",
+			"Name": "Sphere",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Model": "dd86c4724bf734c4959d23b3c74faa05",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "08dc2297f8dbf3fe377cad3ab8e3db83",
 			"TypeName": "FlaxEngine.SphereCollider",
 			"ParentID": "08dc2297f7ea0ffe3539c75fa246e2fa",
-			"Name": "SphereCollider"
+			"Name": "SphereCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Radius": 5.0
 		}
 	]
 }
