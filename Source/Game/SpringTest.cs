@@ -8,8 +8,8 @@ namespace Game;
 public class SpringTest : Script
 {
     [NumberCategory(Utils.ValueCategory.Force)]
-    [Range(0, 20000)]
-    public float OverrideBreakForce = 20000;
+    [Range(0, 2000)]
+    public float OverrideBreakForce = 2000;
 
     private float _previousBreakForce;
 
