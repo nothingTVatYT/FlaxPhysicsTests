@@ -37,7 +37,6 @@ public class Scale : Script
         AngularVelocity = _rigidBody.AngularVelocity;
         Angle = _rigidBody.Orientation.EulerAngles.Z;
         //Torque.Z = ApplyForce;
-        Mathf.DegreesToRadians
         if (Mathf.Abs(Angle) > 0.01f)
             Torque.Z *= (1f - Angle/36000f);
         Torque.Z = Mathf.Clamp(Torque.Z, 1, 100000);
