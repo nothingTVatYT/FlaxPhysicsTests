@@ -355,6 +355,97 @@
 					}
 				]
 			}
+		},
+		{
+			"ID": "08dc2297f6bf5d4631e5b74780fe4493",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Spring",
+			"Transform": {
+				"Translation": {
+					"X": 597.7669067382813,
+					"Y": 0.0,
+					"Z": -619.0938720703125
+				}
+			}
+		},
+		{
+			"ID": "08dc2297f4d28fc42c4744e448cdcf31",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "08dc2297f6bf5d4631e5b74780fe4493",
+			"Name": "RigidBody",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 300.0,
+					"Z": 0.0
+				}
+			},
+			"IsKinematic": true
+		},
+		{
+			"ID": "08dc2297f3ddff5c2a23a37a33698113",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "08dc2297f4d28fc42c4744e448cdcf31",
+			"Name": "Cube",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "08dc2297f9ffbcaa3a53d8d0d54b8ca6",
+			"TypeName": "FlaxEngine.DistanceJoint",
+			"ParentID": "08dc2297f4d28fc42c4744e448cdcf31",
+			"Name": "DistanceJoint",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Target": "08dc2297f7ea0ffe3539c75fa246e2fa"
+		},
+		{
+			"ID": "6e82bcfd49bccdb18e7e71945d6ac56c",
+			"TypeName": "Game.SpringTest",
+			"ParentID": "08dc2297f9ffbcaa3a53d8d0d54b8ca6",
+			"V": {}
+		},
+		{
+			"ID": "08dc2297f7ea0ffe3539c75fa246e2fa",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "08dc2297f6bf5d4631e5b74780fe4493",
+			"Name": "SpringLoad",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 249.666748046875,
+					"Z": 0.0
+				}
+			},
+			"OverrideMass": true
+		},
+		{
+			"ID": "08dc2297f8dbf3fe377cad3ab8e3db83",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "08dc2297f7ea0ffe3539c75fa246e2fa",
+			"Name": "SphereCollider"
 		}
 	]
 }
