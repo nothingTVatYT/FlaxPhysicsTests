@@ -105,15 +105,15 @@
 			"Name": "Camera",
 			"Transform": {
 				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 277.708740234375,
-					"Z": 190.70037841796876
+					"X": -842.6749267578125,
+					"Y": 163.97418212890626,
+					"Z": 88.60240173339844
 				},
 				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032839
+					"X": -0.0013440499315038324,
+					"Y": 0.9833186268806458,
+					"Z": -0.18174156546592713,
+					"W": -0.007272025104612112
 				}
 			},
 			"StaticFlags": 0
@@ -478,6 +478,174 @@
 				}
 			},
 			"Radius": 5.0
+		},
+		{
+			"ID": "08dc276687848433dd82bf7852c067ef",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Collisions",
+			"Transform": {
+				"Translation": {
+					"X": -840.9873657226563,
+					"Y": 41.381103515625,
+					"Z": -195.05636596679688
+				}
+			}
+		},
+		{
+			"ID": "08dc276d5cc61e41999a718babaea9fa",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "08dc276687848433dd82bf7852c067ef",
+			"Name": "SphereCollider",
+			"Transform": {
+				"Translation": {
+					"X": 40.29364013671875,
+					"Y": 60.0,
+					"Z": 0.0
+				}
+			},
+			"ContactOffset": 0.0,
+			"Radius": 10.0
+		},
+		{
+			"ID": "9b62cb734e93689869572da4ed210197",
+			"TypeName": "Game.ColliderView",
+			"ParentID": "08dc276d5cc61e41999a718babaea9fa",
+			"V": {}
+		},
+		{
+			"ID": "aba01c654d2a6bda1df97ab2c8bade90",
+			"TypeName": "Game.MoveIt",
+			"ParentID": "08dc276d5cc61e41999a718babaea9fa",
+			"V": {
+	"RelativePosition": {
+		"X": 0.0,
+		"Y": 100.0,
+		"Z": 0.0
+	}
+}
+		},
+		{
+			"ID": "08dc27736a34418f28c13730433369ff",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "08dc276687848433dd82bf7852c067ef",
+			"Name": "KinematicRigidBody",
+			"Transform": {
+				"Translation": {
+					"X": 15.068603515625,
+					"Y": 60.0,
+					"Z": 0.0
+				}
+			},
+			"Mass": 4.188790321350098,
+			"IsKinematic": true
+		},
+		{
+			"ID": "b93b9ae54a74443e3165afaa6042cc0b",
+			"TypeName": "Game.MoveIt",
+			"ParentID": "08dc27736a34418f28c13730433369ff",
+			"V": {
+	"RelativePosition": {
+		"X": 0.0,
+		"Y": 100.0,
+		"Z": 0.0
+	}
+}
+		},
+		{
+			"ID": "daa34644433f815e97a045a7c4854863",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "08dc27736a34418f28c13730433369ff",
+			"Name": "KinematicRigidBodyCollider",
+			"ContactOffset": 0.0,
+			"Radius": 10.0
+		},
+		{
+			"ID": "25862f9d41d56b8359ba57bdce6adaaf",
+			"TypeName": "Game.ColliderView",
+			"ParentID": "daa34644433f815e97a045a7c4854863",
+			"V": {}
+		},
+		{
+			"ID": "c9ddca5e47bdcc2c826247a4f419833d",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "08dc276687848433dd82bf7852c067ef",
+			"Name": "PhysicsRigidBody",
+			"Transform": {
+				"Translation": {
+					"X": -7.174560546875,
+					"Y": 60.0,
+					"Z": 0.0
+				}
+			},
+			"Mass": 4.188790321350098
+		},
+		{
+			"ID": "bb0fcdf24487bcaa096978a63b387082",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "c9ddca5e47bdcc2c826247a4f419833d",
+			"Name": "PhysicsRigidBodyCollider",
+			"ContactOffset": 0.0,
+			"Radius": 10.0
+		},
+		{
+			"ID": "618d4685424c9a2d1b5ab0b60b15be18",
+			"TypeName": "Game.ColliderView",
+			"ParentID": "bb0fcdf24487bcaa096978a63b387082",
+			"V": {}
+		},
+		{
+			"ID": "08dc2766882990f3e0d96cf47423348a",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "08dc276687848433dd82bf7852c067ef",
+			"Name": "BoxCollider",
+			"IsTrigger": true,
+			"ContactOffset": 0.0,
+			"Size": {
+				"X": 100.0,
+				"Y": 10.0,
+				"Z": 100.0
+			}
+		},
+		{
+			"ID": "389a80d44cdf5980dc4da2937b9f2655",
+			"TypeName": "Game.ColliderView",
+			"ParentID": "08dc2766882990f3e0d96cf47423348a",
+			"V": {}
+		},
+		{
+			"ID": "08dc27768510622c83b6a450d0ca4cb0",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "08dc276687848433dd82bf7852c067ef",
+			"Name": "CharacterController",
+			"Transform": {
+				"Translation": {
+					"X": -35.1484375,
+					"Y": 60.0,
+					"Z": 0.0
+				}
+			},
+			"ContactOffset": 0.0,
+			"Radius": 10.0,
+			"Height": 0.0
+		},
+		{
+			"ID": "1f24bbbe4ee5f958f0cd1dab01a7e77c",
+			"TypeName": "Game.MoveIt",
+			"ParentID": "08dc27768510622c83b6a450d0ca4cb0",
+			"V": {
+	"RelativePosition": {
+		"X": 0.0,
+		"Y": 100.0,
+		"Z": 0.0
+	}
+}
+		},
+		{
+			"ID": "0c46eebd4ce7352a82922a8ad88277e0",
+			"TypeName": "Game.ControllerView",
+			"ParentID": "08dc27768510622c83b6a450d0ca4cb0",
+			"V": {}
 		}
 	]
 }
