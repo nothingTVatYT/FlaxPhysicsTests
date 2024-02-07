@@ -11,6 +11,8 @@ public class MoveIt : Script
 {
     [NumberCategory(Utils.ValueCategory.Distance)]
     public Vector3 RelativePosition = Vector3.Zero;
+
+    public float PhaseOffset = 0;
     private Vector3 _originalPosition;
     private RigidBody _rigidBody;
 
@@ -37,7 +39,7 @@ public class MoveIt : Script
     /// <inheritdoc/>
     public override void OnUpdate()
     {
-        var amount = Mathf.Sin(Time.GameTime);
+        var amount = Mathf.Sin(Time.GameTime + PhaseOffset);
         if (_rigidBody != null)
             _rigidBody.Position = Vector3.Lerp(_originalPosition, _originalPosition + RelativePosition, amount);
         else

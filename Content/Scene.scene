@@ -487,7 +487,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -840.9873657226563,
-					"Y": 41.381103515625,
+					"Y": 61.24559020996094,
 					"Z": -195.05636596679688
 				}
 			}
@@ -549,7 +549,8 @@
 		"X": 0.0,
 		"Y": 100.0,
 		"Z": 0.0
-	}
+	},
+	"PhaseOffset": 0.7853982
 }
 		},
 		{
@@ -599,6 +600,7 @@
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "08dc276687848433dd82bf7852c067ef",
 			"Name": "BoxCollider",
+			"IsTrigger": true,
 			"ContactOffset": 0.0,
 			"Size": {
 				"X": 100.0,
@@ -637,7 +639,8 @@
 		"X": 0.0,
 		"Y": 100.0,
 		"Z": 0.0
-	}
+	},
+	"PhaseOffset": 1.5707964
 }
 		},
 		{
