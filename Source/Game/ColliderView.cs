@@ -21,6 +21,8 @@ public class ColliderView : Script
     {
         _collider.CollisionEnter += OnCollisionEnter;
         _collider.CollisionExit += OnCollisionExit;
+        _collider.TriggerEnter += OnTriggerEnter;
+        _collider.TriggerExit += OnTriggerExit;
     }
 
     /// <inheritdoc/>
@@ -28,6 +30,8 @@ public class ColliderView : Script
     {
         _collider.CollisionEnter -= OnCollisionEnter;
         _collider.CollisionExit -= OnCollisionExit;
+        _collider.TriggerEnter -= OnTriggerEnter;
+        _collider.TriggerExit -= OnTriggerExit;
     }
 
     /// <inheritdoc/>
@@ -57,6 +61,17 @@ public class ColliderView : Script
     }
 
     private void OnCollisionExit(Collision collision)
+    {
+        _isColliding = false;
+    }
+
+    private void OnTriggerEnter(PhysicsColliderActor actor)
+    {
+        Debug.Log($"trigger enter event on {Actor.Name}");
+        _isColliding = true;
+    }
+
+    private void OnTriggerExit(PhysicsColliderActor actor)
     {
         _isColliding = false;
     }

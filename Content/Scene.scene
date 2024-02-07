@@ -599,7 +599,6 @@
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "08dc276687848433dd82bf7852c067ef",
 			"Name": "BoxCollider",
-			"IsTrigger": true,
 			"ContactOffset": 0.0,
 			"Size": {
 				"X": 100.0,
@@ -620,7 +619,7 @@
 			"Name": "CharacterController",
 			"Transform": {
 				"Translation": {
-					"X": -35.1484375,
+					"X": -28.31427001953125,
 					"Y": 60.0,
 					"Z": 0.0
 				}
